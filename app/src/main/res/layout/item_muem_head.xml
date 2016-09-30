@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请登录"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingLeft="18dp"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/icon_login"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/tv_like"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_like"
+            android:textColor="#ffffff"
+            android:drawablePadding="20dp"
+            android:paddingLeft="18dp"
+            android:textSize="14sp"
+            android:text="我的收藏"/>
+        <TextView
+            android:id="@+id/tv_xiazai"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="18dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_xiazai"
+            android:drawablePadding="20dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:text="离线下载"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_shouye"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#FFF0F0F0"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:background="@mipmap/icon_shouye"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1196db"
+            android:text="首页"
+            android:textSize="16dp"
+            android:layout_marginLeft="18dp"/>
+    </LinearLayout>
+    <com.example.srdz.daily.weight.MyListView
+        android:id="@+id/lv_themes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent">
+
+    </com.example.srdz.daily.weight.MyListView>
+</LinearLayout>

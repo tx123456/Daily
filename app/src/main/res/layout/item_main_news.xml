@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF0F0F0">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/item_back_card">
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日新闻"
+        android:layout_marginLeft="5dp"
+        android:textSize="13sp"
+        android:textColor="#ff666666"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_title"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_title"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:text="jjjjjjjjjj"/>
+    </RelativeLayout>
+
+</FrameLayout>
+
+</LinearLayout>
